@@ -95,12 +95,12 @@ nav#navi li.social > ul li:nth-child(3) i { color:#FF0000}
 div#slider{max-width:100%;}
 div#slider > div{
     position:relative;
-    background: url(../img/kebab.jpg) center center no-repeat;
-    background-size: 100%;
+    background: url(../img/kebab.jpg) top center no-repeat;
+    /* background-size: 100% 100%; */
     /* background-position: -25% 0%; */
     /* animation:slider 7s linear infinite; */
-    min-width:100%;
-    min-height: 300px;
+    width:100%;
+    min-height: 350px;
 }
 
 div#slider > div button{

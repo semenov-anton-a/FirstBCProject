@@ -34,6 +34,7 @@ const slider = {
         'kebab.jpg',
         'r.jpg',
         'r2.jpg',
+        'r3.jpg',
     ],
     counter : function(){
         /**
