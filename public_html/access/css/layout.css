@@ -1,4 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-html {
-    font-size: 62.5%;
+
+/* ************
+    VARIABLES 
+    Example -> color: var(--title2-color);
+*/
+:root{
+    --title-color   :#B02886;
+    --title2-color  :#79BA51 ;
+    
+    --bg-color  : #CDDDF3;
+    --bg2-color :#DBD1C2;
 }
+
+html {
+    /* font-size: 62.5%; */
+}
+
+
+/*  ***********
+    NAVIGATION
+*/
+nav#navi{
+    background-color: var(--bg-color);
+}
+nav#navi img{max-width: 30%;}
+nav#navi > div{
+    display: flex;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav#navi > div img{margin-left: 30%;}
+nav#navi > div i{color:var(--title2-color)}
+
+
+
+
+
+
+/* If Menu not opend */
+nav#navi[role=mobile] div[data-active="false"]{display: none;}
+
+
+/*  
+    NAVIGATION END
+***************/
