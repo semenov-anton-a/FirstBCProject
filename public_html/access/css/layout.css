@@ -16,6 +16,11 @@ html {
     /* font-size: 62.5%; */
 }
 
+/* Links */
+a{
+    text-decoration: none;
+}
+
 
 /*  ***********
     NAVIGATION
@@ -23,23 +28,64 @@ html {
 nav#navi{
     background-color: var(--bg-color);
 }
+
+nav#navi a {
+    color:var(--title2-color);
+}
+
 nav#navi img{max-width: 30%;}
+
 nav#navi > div{
     display: flex;
     padding: 10px 30px;
     align-items: center;
     justify-content: space-between;
 }
-nav#navi > div img{margin-left: 30%;}
-nav#navi > div i{color:var(--title2-color)}
 
+nav#navi div i{
+    color:var(--title2-color);
+    cursor: pointer;
+}
 
-
-
-
+ 
+nav#navi[role=mobile],
+div[data-active="false"], 
+nav#navi > div img{
+    margin-left: 30%;
+}
 
 /* If Menu not opend */
 nav#navi[role=mobile] div[data-active="false"]{display: none;}
+
+nav#navi[role=mobile] , 
+div[data-active="true"] 
+nav#navi[role=mobile]
+{
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    width:100%;
+    height: 100%;
+    background-color:var(--bg-color);
+    /* background-color:red; */
+}
+
+ 
+nav#navi[role=mobile],
+div[data-active="true"], 
+nav#navi[role=mobile] > div img{
+    margin-left: 0;
+}
+
+nav#navi[role=mobile] 
+div[data-active="true"] ul li
+{
+    font-size: 26px;
+    padding: 10px 0;
+}
+
+
 
 
 /*  
