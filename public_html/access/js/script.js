@@ -19,18 +19,44 @@ const navigation = {
         window.addEventListener('resize', function(){
             if( window.screen.width >= 767 ){ navigation.closeMenu(); }
         });
-        return false;
     },
 }//Obj navigation END
-
-
-navigation.init();
 /*
  *  NAVIGATION END
  *****************/
-
-
-/**
- *  event window resize */
-
-
+/*** *********
+ *  SLIDER */
+const slider = {
+    elem : document.querySelector("div#slider > div"),
+    path : './access/img/',
+    curretIndex : 0,
+    imgs : [
+        'kebab.jpg',
+        'r.jpg',
+        'r2.jpg',
+    ],
+    counter : function(){
+        /**
+         * @return Array [ curretIndex , lastIndex ]
+         */
+        let imgs = this.imgs.length - 1;
+        if( this.curretIndex >= this.imgs.length -1 ){
+            this.curretIndex = this.curretIndex - this.imgs.length + 1
+            return [ 0, this.imgs.length - 1 ];
+        }
+        return [ this.curretIndex = this.curretIndex + 1, this.curretIndex-1 ];
+    },
+    init : function(){
+        let path;
+        setInterval(() => {
+            path = this.path + this.imgs[ this.counter()[0] ];
+            this.elem.style.backgroundImage = 'url(' + path + ')';
+        }, 5000);
+    },
+}
+/*
+ *  SLIDER END 
+** **********/
+/** INITs */
+navigation.init();
+slider.init();

@@ -8,7 +8,10 @@
     css options for All larges screens
 */
 @media screen and (min-width: 767px){
-    nav#navi > div{ display: block; }
+    nav#navi > div{ 
+        display: block; 
+        padding: 10px 10px;
+    }
     nav#navi > div:first-child{ max-width:10% }
     nav#navi img{max-width: 75%;}
     nav#navi {
@@ -37,24 +40,13 @@
 
 /*  *********
     TABLET */
-
-
-
-
-
-
-
-
-
+    
 /*  
     TABLET END 
 **********/
 
 /*  *********
     LARGE SCREEN */
-
-
-
 
 /*  
     LARGE SCREEN END 

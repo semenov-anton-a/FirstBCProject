@@ -26,6 +26,10 @@ div#container {
 }
 
 
+/* BUTTON STYLE */
+button{}
+
+
 /*  ***********
     NAVIGATION
 */
@@ -34,7 +38,7 @@ nav#navi a {color:var(--title2-color);}
 nav#navi img{max-width: 50px;}
 nav#navi > div{
     display: flex;
-    padding: 10px 10px;
+    padding: 10px 30px;
     align-items: center;
     justify-content: space-between;
 }
@@ -45,7 +49,7 @@ nav#navi div i{
 }
  
 nav#navi[data-active="false"] div img{
-    margin-left: 30%;
+    margin-left: 45%;
 }
 nav#navi[data-active="false"] i.fa-times{
     display: none;
@@ -81,10 +85,30 @@ nav#navi li.social > ul li { padding-right: 10px; }
 nav#navi li.social > ul li:nth-child(1) i { color:#1877F2}
 nav#navi li.social > ul li:nth-child(2) i { color:#1D9BF0}
 nav#navi li.social > ul li:nth-child(3) i { color:#FF0000}
-
-
-
-
 /*  
     NAVIGATION END
 ***************/
+
+/* ***************  
+    SLIDER END
+*/
+div#slider{max-width:100%;}
+div#slider > div{
+    position:relative;
+    background: url(../img/kebab.jpg) center center no-repeat;
+    background-size: 100%;
+    /* background-position: -25% 0%; */
+    /* animation:slider 7s linear infinite; */
+    min-width:100%;
+    min-height: 300px;
+}
+
+div#slider > div button{
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+}
+/*   
+    SLIDER END
+*************** */
