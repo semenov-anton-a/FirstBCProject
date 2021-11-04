@@ -16,9 +16,13 @@ html {
     /* font-size: 62.5%; */
 }
 
-/* Links */
-a{
-    text-decoration: none;
+a{ text-decoration: none; }
+
+
+/* CONTAINER */
+div#container {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -27,10 +31,10 @@ a{
 */
 nav#navi{background-color: var(--bg-color);}
 nav#navi a {color:var(--title2-color);}
-nav#navi img{max-width: 30%;}
+nav#navi img{max-width: 50px;}
 nav#navi > div{
     display: flex;
-    padding: 10px 30px;
+    padding: 10px 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -46,7 +50,6 @@ nav#navi[data-active="false"] div img{
 nav#navi[data-active="false"] i.fa-times{
     display: none;
 }
-
 
 /* If Menu not opend */
 nav#navi[data-active="false"] div[role=list-menu]{ 
@@ -72,6 +75,12 @@ nav#navi div[role=list-menu] ul li{
     font-size: 26px;
     padding: 10px 0;
 }
+
+nav#navi li.social > ul{ display: flex; }
+nav#navi li.social > ul li { padding-right: 10px; }
+nav#navi li.social > ul li:nth-child(1) i { color:#1877F2}
+nav#navi li.social > ul li:nth-child(2) i { color:#1D9BF0}
+nav#navi li.social > ul li:nth-child(3) i { color:#FF0000}
 
 
 
