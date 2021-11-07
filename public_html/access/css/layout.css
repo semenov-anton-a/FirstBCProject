@@ -4,16 +4,18 @@ html {
 }
 
 body {
-    background-color: #DBD1C2;
-    font-family: 'Roboto', sans-serif;
+  background-color: #dbd1c2;
+  font-family: "Roboto", sans-serif;
+  max-width: 1140px;
+  margin: auto;
 }
 
 h1 {
-    font-size: 3.2rem;
-    color: #B02586;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  font-size: 3.2rem;
+  color: #b02586;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 nav {
@@ -24,38 +26,57 @@ nav {
   height: 14rem;
 }
 nav img {
-    padding-top: 3rem;
-    display: block;
-    margin: auto;
+  padding-top: 3rem;
+  display: block;
+  margin: auto;
 }
-
 
 header {
   max-width: 100%;
   height: 69rem;
 }
 
-button {
-    padding: 1.5rem 2.5rem;
-    background-color: #B02586;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    opacity: 0.75;
-    font-size: 2.6rem;
+.video_container {
+  max-width: 100%;
+  height: 69rem;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+video {
+  height: 69rem;
+  position: absolute;
+  
+}
+
+a {
+  padding: 1.5rem 2.5rem;
+  background-color: #b02586;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  opacity: 0.75;
+  font-size: 2.6rem;
+  text-decoration: none;
+}
+
+.btn {
+  height: 69rem;
+  position: absolute;
+  max-width: 1140px;
+  width: 100%;
+  text-align: center;
+  margin-top: 50rem;
 }
 
 #aboutus p {
-    background-color:#fff;
-    padding: 1.5rem;
-    font-size: 1.8rem;
-    color: #707070;
-
+  background-color: #fff;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  color: #707070;
 }
 
-
 footer {
-    background-color: #707070;
-    max-width: 100%;
+  background-color: #707070;
+  max-width: 100%;
   height: 12rem;
 }
