@@ -18,3 +18,22 @@ html{
 body{
     background-color: var(--title-color);
 }
+
+a{
+    text-decoration: none;
+}
+p{}
+h1{
+    font-size: 3.2rem;
+    color: var(--title-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+h2{}
+img{}
+button{}
+
+
+div#container{}
+
