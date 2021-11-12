@@ -97,12 +97,10 @@ nav#navi li.social>ul li:nth-child(3) i {
 div.btn-header {
     height: 69rem;
     position: absolute;
-    max-width: 1140px;
     width: 100%;
     text-align: center;
     top: 50%;
     left: 0%;
-    /* margin-top: 50rem; */
 }
 div.btn-header>a {
     padding: 1.5rem 2.5rem;
