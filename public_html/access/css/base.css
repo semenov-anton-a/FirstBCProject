@@ -1,0 +1,39 @@
+/**
+    VARIABLES
+    exaple :
+    elem{
+        color: var(--title-color);
+    }
+*/
+:root{
+    --title-color   :#B02886;
+    --title2-color  :#79BA51 ;
+    
+    --bg-color  : #CDDDF3;
+    --bg2-color :#DBD1C2;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--title-color);
+}
+
+a{
+    text-decoration: none;
+}
+p{}
+h1{
+    font-size: 3.2rem;
+    color: var(--title-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+h2{}
+img{}
+button{}
+
+
+div#container{}
+
