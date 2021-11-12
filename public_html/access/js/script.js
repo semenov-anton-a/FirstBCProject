@@ -16,8 +16,8 @@ const navigation = {
     init : function(){
         this.btn[0].addEventListener("click", ()=>{this.click()});
         this.btn[1].addEventListener("click", ()=>{this.click()});
-        window.addEventListener('resize', function(){
-            if( window.screen.width >= 767 ){ navigation.closeMenu(); }
+        window.addEventListener('resize', ()=>{
+            if( window.screen.width >= 767 ){ this.closeMenu(); }
         });
     },
 }//Obj navigation END
