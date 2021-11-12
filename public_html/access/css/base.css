@@ -17,8 +17,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    
-    /* max-width:1140px; */
+    max-width:1140px;
     margin: 0 auto;
     background-color: var(--bg2-color);
 }
