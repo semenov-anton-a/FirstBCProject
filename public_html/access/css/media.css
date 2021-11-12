@@ -38,6 +38,13 @@
     nav#navi[data-active="false"]  div  i.fas{display: none;}
 }
 
+/* PRIVATYCY */
+@media only screen and (min-width: 768px) {
+    ul#dotted{
+        max-width: 70%;
+    }
+}
+
 /*  *********
     TABLET */
     

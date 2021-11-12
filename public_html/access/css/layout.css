@@ -126,3 +126,10 @@ div.video_container>video {
     height: 69rem;
     position: absolute;
 }
+
+
+
+/* PRIVATICY */
+article#privaticy{
+    margin-top:15px;
+}

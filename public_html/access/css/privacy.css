@@ -57,9 +57,3 @@ ul#dotted{
     padding-left: 1.28571429em;
     text-indent: -1.28571429em;
 }
-
-@media only screen and (min-width: 768px) {
-    ul#dotted{
-        max-width: 70%;
-    }
-}
