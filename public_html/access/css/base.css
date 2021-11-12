@@ -5,6 +5,7 @@
         color: var(--title-color);
     }
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
     --title-color   :#B02886;
     --title2-color  :#79BA51 ;
@@ -16,7 +17,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    background-color: var(--title-color);
+    background-color: var(--bg2-color);
 }
 
 a{
@@ -34,6 +35,9 @@ h2{}
 img{}
 button{}
 
-
-div#container{}
+/* CONTAINER */
+div#container {
+    max-width: 100%;
+    margin: 0 auto;
+}
 

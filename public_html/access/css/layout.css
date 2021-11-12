@@ -1,114 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* ************
-    VARIABLES 
-    Example -> color: var(--title2-color);
-*/
-:root{
-    --title-color   :#B02886;
-    --title2-color  :#79BA51 ;
-    
-    --bg-color  : #CDDDF3;
-    --bg2-color :#DBD1C2;
-}
-
-html {
-    /* font-size: 62.5%; */
-}
-
-a{ text-decoration: none; }
-
-
-/* CONTAINER */
-div#container {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-
-/* BUTTON STYLE */
-button{}
-
-
 /*  ***********
     NAVIGATION
 */
-nav#navi{background-color: var(--bg-color);}
-nav#navi a {color:var(--title2-color);}
-nav#navi img{max-width: 50px;}
-nav#navi > div{
+
+nav#navi {
+    background-color: var(--bg-color);
+}
+
+nav#navi a {
+    color: var(--title2-color);
+}
+
+nav#navi img {
+    max-width: 50px;
+}
+
+nav#navi>div {
     display: flex;
     padding: 10px 30px;
     align-items: center;
     justify-content: space-between;
 }
 
-nav#navi div i{
-    color:var(--title2-color);
+nav#navi div i {
+    color: var(--title2-color);
     cursor: pointer;
 }
- 
-nav#navi[data-active="false"] div img{
+
+nav#navi[data-active="false"] div img {
     margin-left: 45%;
 }
-nav#navi[data-active="false"] i.fa-times{
+
+nav#navi[data-active="false"] i.fa-times {
     display: none;
 }
 
 /* If Menu not opend */
-nav#navi[data-active="false"] div[role=list-menu]{ 
-    display: none; 
+
+nav#navi[data-active="false"] div[role=list-menu] {
+    display: none;
 }
 
 /* IF menu is active */
+
 nav#navi[data-active="true"] {
     display: block;
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
-    width:100%;
+    width: 100%;
     height: 100%;
-    background-color:var(--bg-color);
+    background-color: var(--bg-color);
 }
 
-nav#navi[data-active="true"] div img{margin-left: 0;}
-nav#navi[data-active="true"] i.fa-times{display: block;}
-nav#navi[data-active="true"] i.fa-bars{display: none;}
+nav#navi[data-active="true"] div img {
+    margin-left: 0;
+}
 
-nav#navi div[role=list-menu] ul li{
+nav#navi[data-active="true"] i.fa-times {
+    display: block;
+}
+
+nav#navi[data-active="true"] i.fa-bars {
+    display: none;
+}
+
+nav#navi div[role=list-menu] ul li {
     font-size: 26px;
     padding: 10px 0;
 }
 
-nav#navi li.social > ul{ display: flex; }
-nav#navi li.social > ul li { padding-right: 10px; }
-nav#navi li.social > ul li:nth-child(1) i { color:#1877F2}
-nav#navi li.social > ul li:nth-child(2) i { color:#1D9BF0}
-nav#navi li.social > ul li:nth-child(3) i { color:#FF0000}
+nav#navi li.social>ul {
+    display: flex;
+}
+
+nav#navi li.social>ul li {
+    padding-right: 10px;
+}
+
+nav#navi li.social>ul li:nth-child(1) i {
+    color: #1877F2
+}
+
+nav#navi li.social>ul li:nth-child(2) i {
+    color: #1D9BF0
+}
+
+nav#navi li.social>ul li:nth-child(3) i {
+    color: #FF0000
+}
+
 /*  
     NAVIGATION END
 ***************/
 
-/* ***************  
-    SLIDER END
-*/
-div#slider{max-width:100%;}
-div#slider > div{
-    position:relative;
-    background: url(../img/kebab.jpg) top center no-repeat;
-    /* background-size: 100% 100%; */
-    /* background-position: -25% 0%; */
-    /* animation:slider 7s linear infinite; */
-    width:100%;
-    min-height: 350px;
+/* Main Header a */
+div.btn-header {
+    height: 69rem;
+    position: absolute;
+    max-width: 1140px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50rem;
+}
+div.btn-header>a {
+    padding: 1.5rem 2.5rem;
+    background-color: #b02586;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    opacity: 0.75;
+    font-size: 2.6rem;
 }
 
-div#slider > div button{
-    display: flex;
-    position: absolute;
-    bottom: 40px;
-    left: 45%;
+/* Main Header video */
+
+header div.video_container {
+    max-width: 100%;
+    height: 69rem;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
 }
-/*   
-    SLIDER END
-*************** */
+
+div.video_container>video {
+    height: 69rem;
+    position: absolute;
+}
