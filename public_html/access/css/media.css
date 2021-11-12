@@ -1,0 +1,60 @@
+@media screen and (min-width: 965px) {
+    div#container{
+        max-width: 70%;
+    }
+}
+/* ************ 
+    NAVIGATION MENU 
+    css options for All larges screens
+*/
+@media screen and (min-width: 767px){
+    nav#navi > div{ 
+        display: block; 
+        padding: 10px 10px;
+    }
+    nav#navi > div:first-child{ max-width:10% }
+    nav#navi img{max-width: 75%;}
+    nav#navi {
+        display: flex;
+        padding: 0px 0px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav#navi[data-active="false"] div img{margin-left: 0%; }
+    /* If Menu not opend */
+    nav#navi[data-active="false"] div[role=list-menu]{ display: flex; }
+    nav#navi[data-active="false"] div[role=list-menu] ul{ 
+        display: flex;
+        align-items: center;
+    }
+    
+    nav#navi[data-active="false"] div[role=list-menu] ul li{
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    
+    nav#navi[data-active="false"]  li.social ul li{margin:0; padding:5px;}
+    /* Invisibility mobile buttons */
+    nav#navi[data-active="false"]  div  i.fas{display: none;}
+}
+
+/* PRIVATYCY */
+@media only screen and (min-width: 768px) {
+    ul#dotted{
+        max-width: 70%;
+    }
+}
+
+/*  *********
+    TABLET */
+    
+/*  
+    TABLET END 
+**********/
+
+/*  *********
+    LARGE SCREEN */
+
+/*  
+    LARGE SCREEN END 
+**********/

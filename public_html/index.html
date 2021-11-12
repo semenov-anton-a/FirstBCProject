@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="./access/css/reset.css">
+    <link rel="stylesheet" href="./access/css/base.css">
     <link rel="stylesheet" href="./access/css/layout.css">
+    <link rel="stylesheet" href="./access/css/media.css">
+    <title>Hello World</title>
 </head>
+
 <body>
-    <nav>
-        <img src="./access/img/logo_85x85.png" alt="">
-    </nav>
+    <div id="container">
+        <nav id="navi" data-active="false">
+            <div>
+                <img src="access/img/logo.png">
+                <i class="fas fa-bars fa-2x"></i>
+                <i class="fas fa-times fa-2x"></i>
+            </div>
+            <div role="list-menu">
+                <ul>
+                    <li><a href="./reservation.html">Reservation</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./privacy.html">Privacy policy</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                    <li class="social">
+                        <ul>
+                            <li><i class="fab fa-facebook"></i></li>
+                            <li><i class="fab fa-twitter-square"></i></li>
+                            <li><i class="fab fa-youtube"></i></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <header>
-        <video src=""></video>
-        <button>Varaa Pyötä Nyt!</button>
-    </header>
-    
-    <section id="aboutus">
-        <h1>About us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum eaque ratione, rerum esse tempora provident sit nulla repellat eius dignissimos reiciendis quasi voluptatem. Itaque quasi facere suscipit sed sint. Nihil, eum quisquam, architecto debitis blanditiis temporibus, et natus labore ipsam deleniti doloremque. Eos esse impedit sunt aliquid enim distinctio aut dolores alias suscipit doloribus exercitationem, qui quaerat deleniti maiores iste ipsam in dolorum aperiam praesentium maxime placeat rem fugit. Mollitia nihil quisquam a tempora vitae?</p>
-    </section>
+        <header>
+            <div class="video_container">
+                <video loop autoplay muted>
+                    <source src="./access/video/video.mp4" type="video/mp4">
+                </video>
+                <div class="btn-header">
+                    <a href="">Varaa Pyötä Nyt!</a></div>
+                </div>
+        </header>
 
-    <section id="contact">
-        <h1>Contact us</h1>
-        <ul>
-            <li>Address</li>
-            <li>Phone</li>
-            <li>Mail</li>
-        </ul>
-    </section>
-    
-    <footer></footer>
+        <section id="aboutus">
+            <h1>About us</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum eaque
+              ratione, rerum esse tempora provident sit nulla repellat eius
+              dignissimos reiciendis quasi voluptatem. Itaque quasi facere suscipit
+              sed sint. Nihil, eum quisquam, architecto debitis blanditiis temporibus,
+              et natus labore ipsam deleniti doloremque. Eos esse impedit sunt aliquid
+              enim distinctio aut dolores alias suscipit doloribus exercitationem, qui
+              quaerat deleniti maiores iste ipsam in dolorum aperiam praesentium
+              maxime placeat rem fugit. Mollitia nihil quisquam a tempora vitae?
+            </p>
+          </section>
 
+        <section id="contact"></section>
+
+        <footer></footer>
+    </div><!-- #.container -->
+
+    <script type="text/javascript" src='access/js/script.js'></script>
 </body>
+
 </html>
