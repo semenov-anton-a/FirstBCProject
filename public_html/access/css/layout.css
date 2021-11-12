@@ -127,6 +127,13 @@ div.video_container>video {
     position: absolute;
 }
 
+/* Main About US */
+#aboutus p {
+    background-color: #fff;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: #707070;
+  }
 
 
 /* PRIVATICY */
