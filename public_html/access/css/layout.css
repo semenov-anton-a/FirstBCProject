@@ -100,7 +100,9 @@ div.btn-header {
     max-width: 1140px;
     width: 100%;
     text-align: center;
-    margin-top: 50rem;
+    top: 50%;
+    left: 0%;
+    /* margin-top: 50rem; */
 }
 div.btn-header>a {
     padding: 1.5rem 2.5rem;
