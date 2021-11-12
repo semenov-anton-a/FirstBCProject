@@ -32,13 +32,12 @@ figure{
     text-align: center;
 }
 img{
-    border-radius: 50%;
-}
-li{
-    padding: 3px;
+   border-radius: 50%;
+   max-width: 100%;
 }
 
-ul#data{
+li{
+    padding: 3px;
 }
 
 ul#rights{
@@ -52,6 +51,11 @@ ul#dotted{
     margin-left: 1rem;
     border: solid black 1px;
     border-radius: 30px;
+}
+
+#dotted li{
+    padding-left: 1.28571429em;
+    text-indent: -1.28571429em;
 }
 
 @media only screen and (min-width: 768px) {
