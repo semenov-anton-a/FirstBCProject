@@ -54,11 +54,12 @@
           <br />
           <div class="counter_container">
               <label for="">Number of People</label>
-              <input class="counter" type="button" onclick="todown()" value="-" />
-              <input class="counter" type="button" id="result" value="0" />
-              <input class="counter" type="button" onclick="toup()" value="+" />
+              <input class="counter" type="button" onclick="humanCount.down(this)" value="-" />
+              <input class="counter" type="button" id="result" value="1" />
+              <input class="counter" type="button" onclick="humanCount.add(this)" value="+" />
           </div>
-          <p class="small_not">You can call us and make a reservation for more than 10 people.</p>
+          <p class="small_not">You can call us and make a reservation for more than 
+            10 people.</p>
           <br />
       
           <button class="phone_btn"><i class="fas fa-phone"></i> 0461234567</button>
@@ -106,15 +107,19 @@
     </footer>
     </div>
     <script>
-      function toup() {
-        var result = document.getElementById("result");
-        result.value = Number(result.value) + 1;
-      }
 
-      function todown() {
-        var result = document.getElementById("result");
-        result.value = Number(result.value) - 1;
-      }
+        const humanCount = {
+          resultPrint : document.getElementById("result"),
+          max : 10, min : 1,
+          add : function(){
+          if( this.resultPrint.value < this.max ){
+            this.resultPrint.value++;}else{ this.resultPrint.value = this.min;}
+          },
+          down : function(){
+            if( this.resultPrint.value > this.min ){
+            this.resultPrint.value--;}else{ this.resultPrint.value = this.max;}
+          },
+        }
     </script>
   </body>
 </html>
