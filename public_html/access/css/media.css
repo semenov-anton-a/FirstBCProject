@@ -1,6 +1,9 @@
 @media screen and (min-width: 965px) {
     div#container{
-        max-width: 70%;
+        max-width: 1140px;
+    }
+    .footer{
+        max-width: 1140px;
     }
 }
 /* ************ 
