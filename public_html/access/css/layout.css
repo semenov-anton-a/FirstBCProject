@@ -128,7 +128,6 @@ div.video_container > video {
 #aboutus p {
   background-color: #fff;
   padding: 1.5rem;
-  font-size: 1.8rem;
   color: #707070;
   line-height: 150%;
 }
@@ -193,9 +192,45 @@ article#privaticy {
   color: white;
 }
 
+/*Contact us*/
+
+#contact{
+  color: var(--title-color);
+}
+
+#contactflex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#contactflex >*{
+  flex-wrap: 1;
+  flex-basis: 100%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#map{
+  display: none;
+}
+
+
+#infotable tr >*{
+  padding: 1rem;
+  margin: 3rem;
+  font-size: 2.2rem;
+}
+
+#infotable tr a{
+  text-decoration: underline dotted var(--title-color);
+}
+
+
 /* RESERVATION PAGE */
 .reservation_body {
-    font-family: Roboto;
+  font-family: Roboto;
 }
 
 input[type="text"],
@@ -210,8 +245,8 @@ select {
   box-sizing: border-box;
 }
 label {
-    font-size: 1.8rem;
-    margin: 1rem;
+  font-size: 1.8rem;
+  margin: 1rem;
 }
 
 input[type="time"] {
@@ -233,39 +268,39 @@ input[type="time"] {
 }
 
 .counter_container {
-    text-align: center;
+  text-align: center;
 }
 
-.counter{
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 2.5rem;
-    margin-right: 2rem;
+.counter {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 2.5rem;
+  margin-right: 2rem;
 }
 
 .small_not {
-    text-align: center;
-    margin: 2rem;
-    font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+  font-size: 2rem;
 }
 
 .phone_number {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
-.phone_number >* {
-    flex-grow: 1;
-    flex-basis: 0;
-    width: 50%;
-    text-align: center;
-    font-size: 2rem;
-    color: #000;
+.phone_number > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
 }
 
-.reservation_btn{
-    padding: 1.5rem 2.5rem;
+.reservation_btn {
+  padding: 1.5rem 2.5rem;
   background-color: var(--title-color);
   color: #fff;
   border: none;
@@ -278,11 +313,11 @@ input[type="time"] {
   cursor: pointer;
 }
 .reservation_btn:hover {
-    background-color: #811761;
+  background-color: #811761;
 }
 
-.phone_btn{
-    padding: 1.5rem 2.5rem;
+.phone_btn {
+  padding: 1.5rem 2.5rem;
   background-color: var(--title2-color);
   color: #fff;
   border: none;
@@ -295,13 +330,11 @@ input[type="time"] {
   cursor: pointer;
 }
 .phone_btn:hover {
-    background-color: #2a9c2a;
-
+  background-color: #2a9c2a;
 }
 .form_class {
-    margin: 2rem;
+  margin: 2rem;
 }
-
 
 .webscreen_reservation {
   display: none;
