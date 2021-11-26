@@ -6,7 +6,6 @@ body{
     margin: auto;
     padding: 2px;
     font-size: 1.5rem;
-    max-width: 1140px;
 }
 
 h2{
@@ -20,14 +19,15 @@ section >*{
     background-color: white;
     margin: 4px;
     padding: 4px;
-
 }
 
 #info >*{
     margin: 4px;
     padding: 4px;
-
+    width: 80%;
 }
+
+
 figure{
     text-align: center;
 }
