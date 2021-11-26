@@ -5,12 +5,32 @@
 }
 
 @media screen and (min-width: 426px) {
-  #map {
-    display: block;
-  }
+
   #contact #contactflex > * {
     flex-basis: 20%;
   }
+
+  #map {
+    display: block;
+    position: relative;
+    padding-bottom: 40%;
+    padding-left: 20%;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  #map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  #contactinfo{
+    padding-top: 10%;
+  }
+  
 }
 
 /* ************ 

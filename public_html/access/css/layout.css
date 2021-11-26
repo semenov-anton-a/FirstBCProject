@@ -203,6 +203,7 @@ article#privaticy {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: space-around;
 }
 
 #contactflex >*{
@@ -216,11 +217,10 @@ article#privaticy {
   display: none;
 }
 
-
 #infotable tr >*{
   padding: 1rem;
   margin: 3rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 #infotable tr a{
