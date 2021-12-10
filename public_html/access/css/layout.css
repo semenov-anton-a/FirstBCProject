@@ -198,3 +198,7 @@ div.video_container > video {
   text-align: center;
   color: white;
 }
+
+.footer p {
+  color: var(--bg2-color);
+}
