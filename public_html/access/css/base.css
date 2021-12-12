@@ -12,6 +12,8 @@
     
     --bg-color  : #CDDDF3;
     --bg2-color :#DBD1C2;
+
+    --footer-color : #707070;
 }
 html{
     font-size: 62.5%;
@@ -20,12 +22,15 @@ body{
     /* max-width:1140px; */
     margin: 0 auto;
     background-color: var(--bg2-color);
+   font-family: Roboto;
 }
 
 a{
     text-decoration: none;
 }
-p{}
+p{
+    font-size: 1.8rem;
+}
 h1{
     font-size: 3.2rem;
     color: var(--title-color);
